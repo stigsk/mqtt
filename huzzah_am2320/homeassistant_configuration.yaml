@@ -1,0 +1,13 @@
+sensor:
+  - platform: mqtt
+    name: "am2320_temperature"
+    state_topic: "main/topic"
+    value_template: "{{value_json.currentTempC}}"
+    unit_of_measurement: "°C"
+    json_attributes_topic: "main/topic/attributes"
+  - platform: mqtt
+    name: "am2320_humidity"
+    state_topic: "main/topic"
+    value_template: "{{value_json.currentHumidPct}}"
+    unit_of_measurement: "%"
+    json_attributes_topic: "main/topic/attributes"

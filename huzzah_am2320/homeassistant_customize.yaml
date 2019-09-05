@@ -1,0 +1,4 @@
+sensor.am2320_temperature:
+  friendly_name: "AM2320 Temperature [°C]"
+sensor.am2320_humidity:
+  friendly_name: "AM2320 Humidity [%]"
